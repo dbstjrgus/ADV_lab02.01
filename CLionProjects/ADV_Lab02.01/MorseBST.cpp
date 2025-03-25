@@ -142,6 +142,9 @@ std::string MorseBST::morseToText(const std::string &morse) const {
 std::string MorseBST::textToMorse(const std::string& text) const {
     std::string result;
     for (const auto& c : text) {
+        if (map.find(c) == map.end()) {
+            throw std::runtime_error("Invalid Character input");
+        }
         std::string s = traversefind(this->root, c);
         result += (s + " ");
 

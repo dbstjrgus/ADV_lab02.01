@@ -14,7 +14,7 @@ int main() {
     MorseBST bst;
     int choice;
     std::string input;
-    std::cout <<bst.textToMorse("|") << std::endl;
+    std::cout <<bst.textToMorse("L") << std::endl;
     std::cout << "Which functionality do you want use?" << std::endl;
     std::cout << "1. Morse to String" << std::endl;
     std::cout << "2. String to Morse" << std::endl;
