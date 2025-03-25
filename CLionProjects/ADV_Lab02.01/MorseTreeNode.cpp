@@ -4,6 +4,11 @@
 
 #include "MorseTreeNode.h"
 
+/**
+ * default constructor for each node
+ * @param letter the actual character
+ * @param morseCode  the morse code that corresponds to the character
+ */
 MorseTreeNode::MorseTreeNode(char letter, std::string morseCode) {
     this->letter = letter;
     this->morseCode = morseCode;
@@ -11,9 +16,5 @@ MorseTreeNode::MorseTreeNode(char letter, std::string morseCode) {
     right = nullptr;
 }
 
-MorseTreeNode::~MorseTreeNode() {
-    delete left;
-    delete right;
-
-}
+MorseTreeNode::~MorseTreeNode() {}
 
